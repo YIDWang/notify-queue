@@ -46,7 +46,7 @@ func BenchmarkQueueDiscard(b *testing.B) {
 	}
 }
 
-func BenchmarkBigSetScan(b *testing.B) {
+func BenchmarkQueueScan(b *testing.B) {
 	clientNum := 10000
 	q := NewQueue(clientNum, 1)
 	nc := make([]chan interface{}, 0, clientNum)
